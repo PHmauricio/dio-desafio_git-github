@@ -22,4 +22,7 @@ git status
 *mostrar as alteracoes realizadas
 git log
 
-//adicionar mais codigos vistos no curso
+git add -A //adicionar todas alteracoes
+git commit -m"<mensagem que vai aparecer no commit>"
+git remote add origin <link do repositorio remoto>
+git push -u origin main //enviar para o servidor remoto
