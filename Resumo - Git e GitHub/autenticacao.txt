@@ -1,0 +1,21 @@
+//autenticaçao via token
+git clone <nome do repositorio> //clona um repositorio
+/criar um token, depois que sair da pagina perde o acesso ao codigo do token
+para nao ficar gerando novos tokens, podemos salvar no PC/
+git config --global credential.helper store //store fica no armazenamento do PC. cache e armezenado na cache
+git config --global credential.helper //mostra como esta sendo salvo as credenciais
+git config --global --show-origin credendial.helper //mostra o caminho onde esta salvo as credenciais
+cat ./gitconfig //mostra o conteudo do arquivo "gitconfig"
+cat .git-credentials //mostra o token que foi salvo anteriormente
+
+//autenticaçao via SSH (Secure Socket Shell)
+ls -a ~/.ssh //ver chaves SSH presentes
+ssh-keygen -t ed25519 -C <seu email> //cria uma chave SSH
+*/ para local padrao > enter
+digite uma passphrase (senha) e confirme/*
+eval "$(ssh-agent -s)" //inicia o ssh-agent
+ssh-add ~/.<local onde esta salvo a chave ssh> //adiciona a chave privada ao ssh-agent
+*/adicionar a chave publica ao github/*
+cd ~/.ssh //entra no diretorio onde esta as chaves SSH
+ls //lista as chaves
+cat id_ed25519 //mostra o conteudo da chave

@@ -1,0 +1,9 @@
+//configurando o git
+
+git config --global user.name <nome de usuario> //seta o nome de usuario
+git config --global user.name //mostra o nome de usuario
+git config --global user.email <email da conta no git> //seta o email da conta
+git config --global user.email //mostra o email da conta
+git config --global init.defaultBranch //mostra o tipo da branch padrao
+git config --global init.defaultBranch <nome> //muda o nome da branch
+git config --global --list //mostra as configuraçoes globais

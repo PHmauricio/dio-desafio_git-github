@@ -1,0 +1,25 @@
+Git - controle de versao DISTRIBUIDO
+GitHub - controle de versao CENTRALIZADO
+
+* iniciar um repositorio Git
+git init
+
+* conectar um repositorio local com um remoto
+git remote add origin <link do repositorio>
+
+* desfazer alteracoes (local)
+git commit --amend //alterar a mensagem do ultimo commit
+git commit --amend -m"nova mensagem" //altera a mensagem sem abrir o editor
+*/desfazer um commit
+git reset
+git reset --soft
+git reset --mixed
+git reset --hard /*
+
+*mostrar o status do repositorio (se tem alguma alteracao sera mostrado)
+git status
+
+*mostrar as alteracoes realizadas
+git log
+
+//adicionar mais codigos vistos no curso
